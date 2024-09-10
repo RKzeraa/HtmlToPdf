@@ -1,0 +1,13 @@
+{
+  "name": "html-to-pdf",
+  "version": "1.0.0",
+  "main": "pdfService.js",
+  "type": "module",
+  "scripts": {
+    "start": "node pdfService.js"
+  },
+  "dependencies": {
+    "html-pdf": "^3.0.1",
+    "pdf-lib": "^1.17.1"
+  }
+}
