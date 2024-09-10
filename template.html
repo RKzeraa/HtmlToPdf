@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requerimento de Inscrição - Programa de Monitoria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+        .header-table, .footer-table {
+            border: none;
+        }
+        .header-table td {
+            text-align: center;
+            font-weight: bold;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        .no-border td {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <table class="header-table">
+        <tr>
+            <td>
+                <img src="brasao.png" alt="Brasão" style="width: 80px;">
+            </td>
+            <td>
+                <p>UNIVERSIDADE FEDERAL RURAL DE PERNAMBUCO</p>
+                <p>PRÓ-REITORIA DE ENSINO DE GRADUAÇÃO</p>
+                <p>COORDENAÇÃO GERAL DE CURSOS DE GRADUAÇÃO</p>
+                <p>PROGRAMA DE MONITORIA</p>
+                <p><strong>REQUERIMENTO DE INSCRIÇÃO</strong></p>
+                <p>(FORMULÁRIO Nº 03)</p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Seção 1: Identificação do Aluno -->
+    <div class="section-title">1. IDENTIFICAÇÃO DO ALUNO REQUERENTE</div>
+    <table>
+        <tr>
+            <td>Nome: {{name}}</td>
+            <td>Data de Nascimento: {{date}}</td>
+        </tr>
+        <tr>
+            <td>Curso: {{course}}</td>
+            <td>Matrícula: {{studentRegistration}}</td>
+            <td>Turno: {{shift}}</td>
+        </tr>
+        <tr>
+            <td>Identidade: {{documentId}}</td>
+            <td>CPF: {{documentCpf}}</td>
+            <td>Estado civil: {{maritalStatus}}</td>
+        </tr>
+        <tr>
+            <td colspan="3">Endereço: _____________________________________________________________________</td>
+        </tr>
+        <tr>
+            <td>Bairro: _________________________</td>
+            <td>Cidade: __________________________</td>
+            <td>CEP: ___________________________</td>
+        </tr>
+        <tr>
+            <td>Telefone: _________________________</td>
+            <td>Celular: __________________________</td>
+        </tr>
+    </table>
+
+    <!-- Seção 2: Monitoria Desejada -->
+    <div class="section-title">2. MONITORIA DESEJADA</div>
+    <table>
+        <tr>
+            <td>Disciplina/Matéria: ______________________________________</td>
+            <td>Departamento/Área: ______________________________________</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Monitoria Voluntária? 
+                <input type="checkbox"> Sim
+                <input type="checkbox"> Não
+            </td>
+        </tr>
+    </table>
+
+    <!-- Seção 3: Horários Disponíveis para Monitoria -->
+    <div class="section-title">3. HORÁRIOS DISPONÍVEIS PARA MONITORIA</div>
+    <table>
+        <tr>
+            <th>Hora</th>
+            <th>Dia</th>
+            <th>Segunda</th>
+            <th>Terça</th>
+            <th>Quarta</th>
+            <th>Quinta</th>
+            <th>Sexta</th>
+        </tr>
+        <tr>
+            <td rowspan="3">_____</td>
+            <td>Manhã</td>
+            <td>_____</td>
+            <td>_____</td>
+            <td>_____</td>
+            <td>_____</td>
+            <td>_____</td>
+        </tr>
+        <tr>
+            <td>Tarde</td>
+            <td>_____</td>
+            <td>_____</td>
+            <td>_____</td>
+            <td>_____</td>
+            <td>_____</td>
+        </tr>
+        <tr>
+            <td>Noite</td>
+            <td>_____</td>
+            <td>_____</td>
+            <td>_____</td>
+            <td>_____</td>
+            <td>_____</td>
+        </tr>
+    </table>
+    <p>Carga horária semanal total disponível: ______ horas</p>
+    <p>Turno(s): ______________________________________</p>
+
+    <!-- Seção 4: Informações Adicionais sobre o Candidato -->
+    <div class="section-title">4. INFORMAÇÕES ADICIONAIS SOBRE O CANDIDATO</div>
+    <table>
+        <tr>
+            <td>Já exerceu monitoria na disciplina solicitada? 
+                <input type="checkbox"> Não
+                <input type="checkbox"> Sim
+            </td>
+            <td>Em que ano? ___________</td>
+        </tr>
+        <tr>
+            <td>Possui alguma reprovação na disciplina solicitada? 
+                <input type="checkbox"> Não
+                <input type="checkbox"> Sim
+            </td>
+            <td>Turno: ___________</td>
+        </tr>
+        <tr>
+            <td>Já foi bolsista de monitoria em outras disciplinas? 
+                <input type="checkbox"> Não
+                <input type="checkbox"> Sim
+            </td>
+            <td>Turno: ___________</td>
+        </tr>
+        <tr>
+            <td>Já foi monitor voluntário em outra disciplina? 
+                <input type="checkbox"> Não
+                <input type="checkbox"> Sim
+            </td>
+            <td>Turno: ___________</td>
+        </tr>
+    </table>
+
+    <!-- Seção 5: Ciência das Normas de Monitoria -->
+    <div class="section-title">5. CIÊNCIA DAS NORMAS DE MONITORIA E CONCORDÂNCIA COM AS MESMAS</div>
+    <p>
+        Declaro para os devidos fins que concordo com as normas e atribuições da monitoria definidas pela Coordenação 
+        Geral de Monitoria da UFRPE e que estou ciente de que, ao não cumpri-las, perderei o direito de exercer, 
+        receber bolsa e obter o devido certificado.
+    </p>
+    <p>
+        RECIFE, {{dateNow}}
+    </p>
+    <p>
+        ___________________________________________<br>
+        Assinatura do Candidato
+    </p>
+
+    <!-- Observação -->
+    <div class="section-title">OBSERVAÇÃO:</div>
+    <p>Anexar histórico escolar atualizado</p>
+
+</body>
+</html>
